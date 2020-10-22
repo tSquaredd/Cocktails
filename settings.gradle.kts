@@ -16,6 +16,6 @@ pluginManagement {
 rootProject.name = "Cocktails"
 
 
+enableFeaturePreview("GRADLE_METADATA")
 include(":androidApp")
 include(":shared")
-

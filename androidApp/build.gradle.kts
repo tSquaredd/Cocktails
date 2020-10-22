@@ -14,16 +14,16 @@ repositories {
 }
 dependencies {
     implementation(project(":shared"))
-    implementation("com.google.android.material:material:1.2.0")
-    implementation("androidx.appcompat:appcompat:1.2.0")
-    implementation("androidx.constraintlayout:constraintlayout:1.1.3")
+    implementation(Deps.Material.android)
+    implementation(Deps.AppCompat.core)
+    implementation(Deps.ConstraintLayout.core)
 }
 android {
-    compileSdkVersion(29)
+    compileSdkVersion(Versions.compileSdk)
     defaultConfig {
         applicationId = "com.tsquaredapps.cocktails.androidApp"
-        minSdkVersion(24)
-        targetSdkVersion(29)
+        minSdkVersion(Versions.minSdk)
+        targetSdkVersion(Versions.targetSdk)
         versionCode = 1
         versionName = "1.0"
     }
